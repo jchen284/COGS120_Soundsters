@@ -1,6 +1,24 @@
+button {
+    background-color: #eee;
+}
+
+.button {
+    width: 20%;
+    background-color: #eee;
+    padding: 1px;
+    margin-top: 15px;
+}
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
 output:before {
   content: "Allowed Downtime: ";
   font-weight: bold;
+  font-size: 100%;
 }
 
 output:after {

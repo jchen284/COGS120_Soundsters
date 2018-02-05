@@ -5,10 +5,13 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" type="text/css" href="styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   </head>
+
   <body>
   	<div class="container">
+  		<center>
 		<div class="jumbotron">
 			<h1>SoundTrack</h1>
 		</div>
@@ -16,17 +19,18 @@
 		<button type="button" onclick="alert('Insert help info')">?</button>
 
 		<div class="button" id="home">
-			<a href="home.html" class="thumbnail">
+			<a href="index.html" class="thumbnail">
 				<p>Home</p>
 			</a>
 		</div>
-
-		<div class="button" id="back">
-			<a href="home.html" class="thumbnail">
-				<p>Back</p>
-			</a>
-		</div>
 		
+<h4>Productivity Tracker</h4>
+<div>Productive for: <span id="productiveTime"></span></div>
+<br>
+<div>Off-Task time left: <span id="timer"></span></div>
+
+
+		<br><br>
 		<h4>Soundscape</h4>
 
       	<div class="sound" id="sound1">
@@ -37,8 +41,8 @@
 		<button type="button" ">Left</button>
 		<button type="button" ">Right</button>
 
-		<h4>Productivity Tracker</h4>
-
+		
+	<br><br>
 		<div class="button" id="edit">
 			<a href="alertsettings.html" class="thumbnail">
 				<p>Alert Settings</p>
@@ -46,13 +50,11 @@
 		</div>
       	
 		
-    	
+    	</center>
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
-
-
-
+<script src="script.js"></script>
   </body>
 </html>
