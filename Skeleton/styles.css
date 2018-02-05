@@ -15,14 +15,20 @@ html {
 
 
 
-output:before {
+#downtime:before {
   content: "Allowed Downtime: ";
   font-weight: bold;
   font-size: 100%;
 }
 
-output:after {
+#downtime:after {
     content: " minutes"
+}
+
+#volume:before {
+  content: "Alert Volume: ";
+  font-weight: bold;
+  font-size: 100%;
 }
 
 .slider {
