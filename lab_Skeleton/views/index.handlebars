@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>SoundTrack | Start</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<!-- this is a comment in HTML -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->        
+</head>
+
+<body>
+	<div class="container">
+		<center>
+			<div class="jumbotron">
+				<h1>SoundTrack</h1>
+			</div>
+
+			<button type="button" onclick="helpStart()">?</button>
+
+			<br><br>
+			<h4>Soundscape</h4>
+
+			<div class="sound" id="sound1">
+				<a href="" class="thumbnail">
+					<p>Soundscape sound goes here</p>
+				</a>
+			</div>
+			<button type="button" ">Left</button>
+			<button type="button" ">Right</button>
+			
+			<br><br>
+			<h4>Alert Sound</h4>
+			<div class="sound" id="sound5">
+				<a href="" class="thumbnail">
+					<p>Alert sound goes here</p>
+				</a>
+			</div>
+			<button type="button" ">Left</button>
+			<button type="button" ">Right</button>
+
+			<br><br><br><br>
+			<output id="downtime" for="downtimeRange">20</output>
+			<br><br>
+			<div class="slidecontainer">
+				<input type="range" min="1" max="40" value="20" class="slider" id="downtimeRange" oninput="downtime.value = downtimeRange.value">
+			</div>
+
+			<br><br>
+			<div class="button" id="start">
+				<a href="screen2" class="thumbnail">
+					<p>Start Working!</p>
+				</a>
+			</div>
+		</center>
+	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/script.js"></script>
+</body>
+</html>
