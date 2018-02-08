@@ -67,6 +67,88 @@ function checkSecond(sec) {
   return sec;
 }
 
+//first page sound javascript
+    //soundscape
+    var fallingRain = new Audio();
+    var forestMorning = new Audio();
+    var burningLogs = new Audio();
+    var whiteNoise = new Audio();
+    fallingRain.src = "fallingRain.mp3";
+    forestMorning.src = "forestMorning.mp3";
+    burningLogs.src = "burningLogs.mp3";
+    whiteNoise.src = "whiteNoise.mp3";
+
+    //alert sound
+    var foghorn = new Audio();
+    var beeping = new Audio();
+    var siren = new Audio();
+    var bells = new Audio();
+    foghorn.src = "foghorn.mp3";
+    beeping.src = "beeping.mp3";
+    siren.src = "siren.mp3";
+    bells.src = "bells.mp3";
+    
+
+    function soundEffect(num)
+    {
+      // if audio is playing, pause it first
+      if (!fallingRain.paused || !forestMorning.paused || !burningLogs.paused || !whiteNoise.paused || !foghorn.paused || !beeping.paused || !siren.paused || !bells.paused) {
+        fallingRain.pause();
+        forestMorning.pause();
+        burningLogs.pause();
+        whiteNoise.pause();
+        foghorn.pause();
+        beeping.pause();
+        siren.pause();
+        bells.pause();
+        console.log ("paused");
+      }
+      //play the song is clicked
+      if (num == 1) {
+        console.log("hi");
+        fallingRain.play();
+      }
+      else if (num == 2) {
+        console.log("hi2");
+        forestMorning.play();
+      }
+      else if (num == 3){
+        console.log("hi3");
+        burningLogs.play();
+      }
+      else if(num == 4){
+        console.log("hi4");
+        whiteNoise.play();
+      }
+      else if(num == 5){
+        console.log("hi4");
+        foghorn.play();
+      }
+      else if(num == 6){
+        console.log("hi4");
+        beeping.play();
+      }
+      else if(num == 7){
+        console.log("hi4");
+        siren.play();
+      }
+      else if(num == 8){
+        console.log("hi4");
+        bells.play();
+      }
+
+      
+      //show which song is selected
+      var div1 = document.getElementById("div1");
+      div1.innerHTML = "You selected "+num;
+    }
+
+    //select a sound effect before start your 
+function validate(){
+  
+  
+}
+
 
 
 
